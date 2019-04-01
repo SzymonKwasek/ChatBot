@@ -1,0 +1,21 @@
+<div class="chat-container">
+	<div class="chat-header">
+		<fa name="cog" animation="spin"></fa>
+	</div>
+
+	<div class="message-container">
+		<app-message *ngFor="let message of messages"
+					 [Type]="message.type"
+					 [Message]="message.message">
+
+		</app-message>
+	</div>
+
+	<div class="input-container">
+		<textarea name="chat" class="input-text"></textarea>
+	</div>
+
+	<button (click)="onClick()">CLICK</button>
+	
+
+</div>

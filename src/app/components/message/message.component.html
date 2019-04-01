@@ -1,0 +1,6 @@
+<div class="message"
+	[class.bot-message]="Type === 'bot'"
+	[class.user-message]="Type === 'user'">
+		<fa name="cog" animation="spin"></fa>
+		<span class="message-container">{{ Message }}</span>
+</div>
