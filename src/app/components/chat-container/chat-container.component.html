@@ -1,21 +1,27 @@
 <div class="chat-container">
 	<div class="chat-header">
-		<fa name="cog" animation="spin"></fa>
+		<div class="chat-image"></div>
+		<span>Talk with me !</span>
 	</div>
 
-	<div class="message-container">
-		<app-message *ngFor="let message of messages"
-					 [Type]="message.type"
-					 [Message]="message.message">
+	<div #scrollable class="message-container">
+		<app-message 
+					 *ngFor="let message of (messages | async)"
+					 [Type]="message.sentBy"
+					 [Message]="message.content">
 
 		</app-message>
 	</div>
-
+	
 	<div class="input-container">
-		<textarea name="chat" class="input-text"></textarea>
+		<input #box name="chat" class="input-text" (keyup.enter)="onEnter(box.value)" />
+		<button class="send-button"
+				(click)=onEnter(box.value)>
+				<fa name="paper-plane"></fa>
+		</button>
 	</div>
 
-	<button (click)="onClick()">CLICK</button>
+	<!-- <button (click)="onClick()">CLICK</button> -->
 	
 
 </div>

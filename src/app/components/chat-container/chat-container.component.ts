@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ResponseService } from 'src/app/services/response.service';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { ResponseService, Message } from 'src/app/services/response.service';
+import { Observable } from 'rxjs';
+import { scan } from 'rxjs/operators';
+
 
 @Component({
 	selector: 'app-chat-container',
@@ -8,30 +11,38 @@ import { ResponseService } from 'src/app/services/response.service';
 })
 export class ChatContainerComponent implements OnInit {
 
-	messages = [
-		{ type: 'bot', message: 'Witaj, w czym mogę Ci pomóc ?' },
-		{ type: 'bot', message: 'Zadaj pytanie' },
-		{ type: 'user', message: 'Pytanko' },
-		{ type: 'bot', message: 'Zadaj pytanie' },
-		{ type: 'bot', message: 'Zadaj pytanie' },
-	]
+	@ViewChild('scrollable') private scrollContainer: ElementRef;
+	@ViewChild('box') private input: ElementRef;
 
-	responses = {};
-	error;
-	url = 'https://zeus.stanusch.com/player-kafelkowy/mvc/json/stanusch_new'
+	messages: Observable<Message[]>;
 
-	constructor(private responseService: ResponseService) {
-		
-	}
+	url = 'https://zeus.stanusch.com/player-kafelkowy/mvc/json/stanusch_new';
+	temp_url="assets/bot.json"
+
+	constructor(private responseService: ResponseService) {	}
 
 	ngOnInit() {
-		this.responseService.getResponse(this.url).subscribe(
-			(res) => this.responses = {...res},
-			error => this.error = error);
+		this.messages = this.responseService.conversation.asObservable()
+		.pipe(
+			scan((acc, val) => [...acc, ...val])
+		);
 	}
 
-	onClick() {
-		console.log(this.responses)
+	ngAfterViewChecked() {        
+        this.scrollToBottom();
+    } 
+
+	onEnter(message: string) {
+		this.input.nativeElement.value = null;
+		this.scrollToBottom();
+		if (message.length > 0) {
+			this.responseService.getResponse(message, this.temp_url);
+		}
 	}
 
+	scrollToBottom(): void {
+        try {
+            this.scrollContainer.nativeElement.scrollTop = this.scrollContainer.nativeElement.scrollHeight;
+        } catch(err) { }                 
+    }	
 }

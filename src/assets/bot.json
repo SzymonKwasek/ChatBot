@@ -1,0 +1,129 @@
+{
+    "playerName": "stanusch_new",
+    "playerId": null,
+    "query": "fact_1005230",
+    "time": 654,
+    "displayQuery": "Po prostu zadaj pytanie",
+    "urlQueryString": "?q=",
+    "jaioResult": {
+    "odp": "<div style=\"text-align: center;\"><span style=\"font-size:18px;\">Oferujemy opartą o sztuczną inteligencję platformę do komunikacji oraz zarządzania wiedzą.<br />Chcesz dowiedzieć się więcej? Po prostu zadaj pytanie</span></div>",
+    "knowledge": "SPEC",
+    "sampleQuestion": "mainpage",
+    "factName": "mainpage",
+    "idOdp": 1005230,
+    "emotion": {
+    "name": "",
+    "video": ""
+    },
+    "videoList": "",
+    "loop": "",
+    "voiceExists": 0,
+    "voiceList": {
+    "voice": {
+    "url": "//zeus.stanusch.com/voice/mp3/pl/be/bea7b46fba55478d1229bac946dceca1.mp3",
+    "voiceExists": 1
+    }
+    },
+    "popup": {
+    "url": "",
+    "w": "",
+    "h": "",
+    "x": 0,
+    "y": 0,
+    "scrollLeft": 1,
+    "scrollTop": 1,
+    "resize": 1
+    },
+    "opener": "",
+    "tag": "",
+    "topic": "",
+    "returnTopic": 0,
+    "mode": "",
+    "avatarId": 1,
+    "refresh": 0,
+    "username": "",
+    "askActively": 0,
+    "php": {
+    "sessid": "2799ECE57EE1CDF263CDFAFC3F4C6842"
+    },
+    "rating": {
+    "idodp": "",
+    "idlogi": "",
+    "idbot": "",
+    "url": ""
+    },
+    "debug": "",
+    "multimedia": "\n\t\t\n\t",
+    "solrCustomQuery": "",
+    "categoryNames": [
+    "Kategoria"
+    ],
+    "factSource": "",
+    "ausers": 1
+    },
+    "jaioResultXml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><aio><odp>&lt;div style=\"text-align: center;\"&gt;&lt;span style=\"font-size:18px;\"&gt;Oferujemy opartą o sztuczną inteligencję platformę do komunikacji oraz zarządzania wiedzą.&lt;br /&gt;Chcesz dowiedzieć się więcej? Po prostu zadaj pytanie&lt;/span&gt;&lt;/div&gt;</odp><knowledge>SPEC</knowledge><sample_question>mainpage</sample_question><fact_name>mainpage</fact_name><id_odp>1005230</id_odp><emotion><name></name><video></video></emotion><video_list></video_list><loop></loop><voice_exists>1</voice_exists><voice_list><voice><url>//zeus.stanusch.com/voice/mp3/pl/be/bea7b46fba55478d1229bac946dceca1.mp3</url><voice_exists>1</voice_exists></voice></voice_list><popup><url></url><w></w><h></h><x>0</x><y>0</y><scroll_left>1</scroll_left><scroll_top>1</scroll_top><resize>1</resize></popup><opener></opener><tag></tag><topic></topic><return_topic>0</return_topic><a_users>1</a_users><mode></mode><avatar_id>1</avatar_id><refresh>0</refresh><username></username><ask_actively>0</ask_actively><php><sessid>2799ECE57EE1CDF263CDFAFC3F4C6842</sessid></php><rating><idodp></idodp><idlogi></idlogi><idbot></idbot><url></url></rating><debug></debug><multimedia>\n\t\t\n\t</multimedia><search_query></search_query><category_names><category_name>Kategoria</category_name></category_names><fact_source></fact_source></aio>",
+    "externalSearchResult": [
+    {
+    "id": "2716",
+    "title": "Pracownicy firmy",
+    "content": "Pracownicy firmy W Stanusch Technologies pracuje zespół młodych i uzdolnionych programistów. Oprócz tego współpracujemy z ośrodkami akademickimi w celu wymiany informacji na temat sztucznej inteligencji. Większość pracowników naszej firmy pracuje u nas...",
+    "group": null,
+    "groups": null,
+    "groupObjs": null,
+    "questions": null,
+    "image": null
+    },
+    {
+    "id": "133218",
+    "title": "Pakiet informacji dla inwestorów",
+    "content": "Pakiet informacji dla inwestorów Zarząd Stanusch Technologies SA stara się prowadzić aktywną politykę informacyjną i utrzymywać kontakt z akcjonariuszami oraz inwestorami. Z myślą o naszych obecnych i potencjalnych akcjonariuszach utworzyliśmy sekcję relacji inwestorskich, która zawiera informacje o bieżącej...",
+    "group": null,
+    "groups": null,
+    "groupObjs": null,
+    "questions": null,
+    "image": null
+    },
+    {
+    "id": "1008284",
+    "title": "Technologia i wdrożenie Platformy Omni-Chatbot",
+    "content": "  Jak funkcjonuje Omni-Chatbot oparty na sztucznej inteligencji? Platforma Omni-Chatbot funkcjonuje w oparciu o algorytmy oraz techniki sztucznej inteligencji . Technologie oferowane przez Stanusch Technologies pozwalają na pełną automatyzację w obsłudze klienta oraz...",
+    "group": null,
+    "groups": null,
+    "groupObjs": null,
+    "questions": null,
+    "image": null
+    },
+    {
+    "id": "1019217",
+    "title": "Kluczowe zasoby",
+    "content": "Kluczowe zasoby firmy Kluczowymi osobami w firmie Stanusch Technologies są: Michał Depta, Business Analyst, sprawuje opiekę nad realizowanymi projektami w firmie Stanusch Technologies SA, Aleksandra Gorzawska pracuje w firmie Stanusch Technologies SA na...",
+    "group": null,
+    "groups": null,
+    "groupObjs": null,
+    "questions": null,
+    "image": null
+    },
+    {
+    "id": "1019115",
+    "title": "Bezpieczeństwo i wydajność Omni-Chatbot",
+    "content": "Bezpieczeństwo i wydajność Omni-Chatbot Platforma Omni-Chatbot posiada zrealizowane przez HP Services testy bezpieczeństwa. Raport z przeprowadzonych testów dostępny jest do wglądu dla klientów Stanusch Technologies. Nasze rozwiązanie dostępne jest...",
+    "group": null,
+    "groups": null,
+    "groupObjs": null,
+    "questions": null,
+    "image": null
+    },
+    {
+    "id": "1008279",
+    "title": "Platforma Omni-Chatbot",
+    "content": "Platforma Omni-Chatbot Wykorzystanie sztucznej inteligencji w firmie Omni-Chatbot to autorska platforma informacyjna stworzona przez Stanusch Technologies. Opiera się o sztuczną inteligencję , która rozumie pytania użytkowników zadane w języku naturalnym, a następnie...",
+    "group": null,
+    "groups": null,
+    "groupObjs": null,
+    "questions": null,
+    "image": null
+    }
+    ],
+    "externalSearchType": "SOLR_FACTS_HIGHLIGHTED",
+    "avatarOn": false
+    }
